@@ -1,0 +1,149 @@
+.profile {
+  height: 70vh;
+  max-width: 80vw;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.484);
+  display: grid;
+  /* flex-direction: row; */
+  grid-template-columns: 2fr 4fr;
+  color: black;
+
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid white;
+}
+
+.profimg {
+  background-image: url("../Img1/profback.jpg");
+  background-size: cover;
+  /* overflow: hidden !important; */
+
+  filter: blur(20);
+  position: relative;
+}
+
+.proftxt h2 {
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
+  font-weight: lighter;
+}
+
+.proftxt h1 {
+  font-family: "Oswald", sans-serif;
+  color: #343a40;
+}
+
+@media (max-width: 1000px) {
+  .profimgGauri {
+    height: 10rem !important;
+    width: 10rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .proftxt h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .proftxt {
+    font-size: 0.3 !important;
+  }
+}
+
+@media (max-width: 840px) {
+  .profile {
+    /* display: flex !important; */
+    /* flex-direction: column !important; */
+    margin-top: 25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .proftxt h2 {
+    font-size: 1rem !important;
+    /* overflow: scroll; */
+  }
+}
+
+@media (max-width: 700px) {
+  .profile {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url("../Img1/profback.jpg");
+  }
+
+  .profimg {
+    /* background-color: white !important; */
+    background-image: none;
+  }
+
+  .proftxt {
+    color: antiquewhite;
+    background-color: rgba(255, 255, 255, 0.482);
+  }
+
+  .profimgGauri {
+    left: 60% !important;
+    width: 6rem !important;
+    height: 6rem !important;
+    top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .proftxt {
+    /* width: 70% !important; */
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 350px) {
+  .countertxt {
+    margin-left: -2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .proftxt {
+    /* width: 70% !important; */
+    font-size: 40% !important;
+    /* overflow: scroll; */
+  }
+}
+
+.profimgGauri {
+  background-image: url("../Img1/profile.jpeg");
+  z-index: 1000;
+  position: absolute;
+  /* top: 50%; */
+  /* right: 50%; */
+  height: 15rem;
+  left: 15%;
+  top: 20%;
+
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  width: 15rem;
+}
+
+.mainprofile {
+  background: linear-gradient(rgba(23, 41, 61, 0.822), rgba(22, 40, 61, 0.84)),
+    url("../skillsimg/design.jpg");
+  background-size: cover;
+  padding: 5rem;
+  /* z-index: -1000; */
+}
+
+.profimg img {
+  z-index: 100;
+}
+
+.proftxt {
+  padding: 2rem;
+  /* overflow: scroll; */
+  /* font-size: 1.7rem; */
+}

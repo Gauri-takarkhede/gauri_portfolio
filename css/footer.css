@@ -1,0 +1,138 @@
+.foot {
+  background: linear-gradient(rgba(23, 41, 61, 0.361), rgba(22, 40, 61, 0.308)),
+    url("../Img1/bg2.jpg");
+  margin-top: -25vh;
+  padding-top: 20vh;
+  -webkit-clip-path: polygon(
+    50% 20%,
+    100% 0,
+    100% 60%,
+    100% 100%,
+    0 100%,
+    0% 60%,
+    0 0
+  );
+  clip-path: polygon(50% 20%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+  padding-bottom: 5rem;
+}
+
+.footxt {
+  /* margin-left: 50%; */
+  padding-top: 10%;
+  /* transform: translateX(-30%); */
+  color: aliceblue;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.socialhandles {
+  width: 50%;
+  margin: auto;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-content: center;
+}
+
+.social {
+  /* align-self: center; */
+  font-size: 3rem;
+  margin-left: 4rem;
+}
+
+.social1 {
+  color: #1971c2;
+  transition: all 0.1s;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  10% {
+    filter: brightness(200%);
+  }
+
+  20% {
+    filter: brightness(100%);
+  }
+
+  30% {
+    filter: brightness(200%);
+  }
+
+  40% {
+    filter: brightness(100%);
+  }
+
+  50% {
+    filter: brightness(200%);
+  }
+
+  60% {
+    filter: brightness(100%);
+  }
+
+  70% {
+    filter: brightness(200%);
+  }
+
+  80% {
+    filter: brightness(100%);
+  }
+
+  90% {
+    filter: brightness(200%);
+  }
+
+  100% {
+    filter: brightness(100%);
+  }
+}
+
+.social2 {
+  color: rgba(255, 255, 255, 0.873);
+  transition: all 0.1s;
+  animation: glow 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.social2:hover {
+  /* scale: 1.5; */
+  color: antiquewhite;
+}
+
+.social3 {
+  color: #e64980;
+  transition: all 0.1s;
+  animation: glow 1s infinite alternate;
+}
+
+.social3:hover {
+  color: #c73e6e;
+}
+
+.social4 {
+  color: #1971c2;
+  transition: all 0.1s;
+  animation: glow 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+.social4:hover {
+  color: #12599b;
+}
+
+@media (max-width: 900px) {
+  .social {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .socialhandles {
+    width: 80%;
+  }
+
+  .countertxt {
+    left: 13rem;
+  }
+}

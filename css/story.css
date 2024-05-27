@@ -1,0 +1,117 @@
+.timeline {
+  /* background-color: aqua; */
+  background: linear-gradient(rgba(16, 29, 44, 0.894), rgba(16, 29, 44, 0.815)),
+    url("../Img1/mystory.jpg") center center fixed;
+  margin: auto;
+  max-width: 100vw;
+  /* height: 100vh; */
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+
+  /* padding: 25px; */
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  font-family: "Fira Sans", sans-serif;
+  color: #ffffff;
+
+  position: relative;
+}
+
+.quote {
+  color: #f4a460;
+  font-style: italic;
+
+  position: absolute;
+  top: 5rem;
+  font-size: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline__component {
+  margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg {
+  padding: 1.5em;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* LEAVE TILL LAST */
+
+.timeline__middle {
+  position: relative;
+  background: #ffffff;
+}
+
+.timeline__point {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+/* LEAVE TILL LAST */
+.timeline__point--bottom {
+  top: initial;
+  bottom: 0;
+}
+
+.timeline__date--right {
+  text-align: right;
+}
+
+.timeline__title {
+  margin: 0;
+  font-size: 1.15em;
+  font-weight: bold;
+}
+
+.timeline__paragraph {
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .timeline__component {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .timeline__component {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    top: 5rem;
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 750px) {
+  .quote {
+    font-size: 1.5rem;
+
+    max-width: 50vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .quote {
+    font-size: 1.5rem;
+  }
+}
